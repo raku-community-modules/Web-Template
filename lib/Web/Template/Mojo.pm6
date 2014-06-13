@@ -8,26 +8,26 @@ class Web::Template::Mojo does Web::Template
   has @!paths  = './views';
 
   method render ($template-name, *%named, *@positional)
-  { ## Template::Mojo uses positional paramemters.
+  {
     my $template-file;
     my $template;
     for @!paths -> $path
     {
-      $template-file = $path ~ $template-name;
+      $template-file = IO::Spec.catfile($path, $template-name);
+      unless $template-file.IO ~~ :f {
+        $template-file = IO::Spec.catfile($path, $template-name ~ ".tm");
+      }
       if $template-file.IO ~~ :f
       {
         $template = slurp($template-file);
         last;
       }
     }
-    if $template.defined
-    {
-      $!engine.new($template).render(|@positional);
-    }
-    else
-    {
-      die "No template file for '$template-name' was found.";
-    }
+
+    $template orelse die "No template file for '$template-name' was found.";
+
+    ## Template::Mojo uses positional paramemters.
+    $!engine.new($template).render(%named.kv, |@positional);
   }
 
   method set-path (*@paths)
