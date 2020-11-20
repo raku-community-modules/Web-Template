@@ -4,24 +4,24 @@
 
 A simple abstraction layer, providing a consistent API for different
 template engines. This is designed for use in higher level web frameworks
-such as [Web::App::Ballet](https://github.com/supernovus/perl6-web-app-ballet/)
-and [Web::App::MVC](https://github.com/supernovus/perl6-web-app-mvc/).
+such as [Web::App::Ballet](https://github.com/raku-community-modules/Web-App-Ballet/)
+and [Web::App::MVC](https://github.com/raku-community-modules/Web-App-MVC/).
 
 ## Supported Template Engines
 
- * [Template6](https://github.com/supernovus/template6/)
+ * [Template6](https://github.com/raku-community-modules/Template6/)
 
    An engine inspired by Template Toolkit. Has many features.
    Wrapper is Web::Template::Template6
 
  * [Template::Mojo](https://github.com/tadzik/Template-Mojo/)
 
-   A template engine inspired by Perl 5's Mojo::Template.
+   A template engine inspired by Perl's Mojo::Template.
    Wrapper is Web::Template::Mojo
 
  * [HTML::Template](https://github.com/masak/html-template/)
 
-   A template engine inspired by Perl 5's HTML::Template.
+   A template engine inspired by Perl's HTML::Template.
    Wrapper is Web::Template::HTML
 
 ## Broken Template Engines
@@ -54,7 +54,7 @@ but some like Mojo, use positional parameters. This handles both.
 
 ## Usage
 
-```perl
+```raku
 
 use Web::Template::TAL;
 my $engine = Web::Template::TAL.new;
@@ -72,7 +72,7 @@ See one of the web application frameworks using this for better examples.
 
 ## Author
 
-[Timothy Totten](https://github.com/supernovus/) -- supernovus on #perl6
+[Timothy Totten](https://github.com/supernovus/) -- supernovus on #raku
 
 ## License
 
