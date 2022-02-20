@@ -1,4 +1,6 @@
 Revision history for Web::Template
 
 {{$NEXT}}
+
+1.0  2022-02-20T11:42:09+01:00
     - First version in the zef ecosystem
