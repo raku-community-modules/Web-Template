@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/raku-community-modules/Web-Template/workflows/test/badge.svg)](https://github.com/raku-community-modules/Web-Template/actions)
+
 # Web::Template
 
 ## Introduction
