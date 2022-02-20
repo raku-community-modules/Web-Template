@@ -1,0 +1,8 @@
+use Test;
+use Web::Template;
+
+plan 1;
+
+pass "replace me";
+
+# vim: expandtab shiftwidth=4

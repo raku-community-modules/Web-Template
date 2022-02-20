@@ -55,12 +55,10 @@ but some like Mojo, use positional parameters. This handles both.
 ## Usage
 
 ```raku
-
 use Web::Template::TAL;
 my $engine = Web::Template::TAL.new;
 $engine.set-path('./views');
 $engine.render('example.xml', :name<Bob>);
-
 ```
 
 See one of the web application frameworks using this for better examples.
@@ -70,11 +68,18 @@ See one of the web application frameworks using this for better examples.
  * Add a test suite with all supported template engines covered.
  * Add support for the Plosurin template engine.
 
-## Author
+## AUTHOR
 
-[Timothy Totten](https://github.com/supernovus/) -- supernovus on #raku
+Timothy Totten
 
-## License
+Source can be located at: https://github.com/raku-community-modules/Web-Template . Comments and Pull Requests are welcome.
 
-[Artistic License 2.0](http://www.perlfoundation.org/artistic_license_2_0)
+COPYRIGHT AND LICENSE
+=====================
+
+Copyright 2013 - 2019 Timothy Totten
+
+Copyright 2020 - 2022 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

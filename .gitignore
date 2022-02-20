@@ -1,4 +1,2 @@
-blib
-Makefile
-*.pir
-*.pbc
+.precomp/
+/Web-Template-*
