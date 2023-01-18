@@ -2,5 +2,8 @@ Revision history for Web::Template
 
 {{$NEXT}}
 
+2.0  2023-01-18T01:06:43+01:00
+    - Removed uninstallable HTML::Template module from the options
+
 1.0  2022-02-20T11:42:09+01:00
     - First version in the zef ecosystem
