@@ -21,6 +21,11 @@ and [Web::App::MVC](https://github.com/raku-community-modules/Web-App-MVC/).
    A template engine inspired by Perl's Mojo::Template.
    Wrapper is Web::Template::Mojo
 
+ * [HTML::Template](https://github.com/masak/html-template/)
+
+   A template engine inspired by Perl's HTML::Template.
+   Wrapper is Web::Template::HTML
+
 ## Broken Template Engines
 
  * [Flower::TAL](https://github.com/supernovus/flower/)
@@ -30,13 +35,6 @@ and [Web::App::MVC](https://github.com/raku-community-modules/Web-App-MVC/).
 
    I will get this fixed up when I can and re-add it to the list of supported
    template engines.
-
- * [HTML::Template](https://github.com/masak/html-template/)
-
-   A template engine inspired by Perl's HTML::Template.
-   Wrapper is Web::Template::HTML
-
-   It had to be removed because of lack of maintenance; in recent times, it couldn't be installed with zef.
 
 ## Methods
 

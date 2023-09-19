@@ -5,7 +5,8 @@
   ],
   "depends": [
     "Template6",
-    "Template::Mojo"
+    "Template::Mojo",
+    "HTML::Template"
   ],
   "description": "A template engine abstraction layer for web frameworks",
   "license": "NOASSERTION",
@@ -13,6 +14,7 @@
   "perl": "6.*",
   "provides": {
     "Web::Template": "lib/Web/Template.rakumod",
+    "Web::Template::HTML": "lib/Web/Template/HTML.rakumod",
     "Web::Template::Mojo": "lib/Web/Template/Mojo.rakumod",
     "Web::Template::Template6": "lib/Web/Template/Template6.rakumod"
   },
