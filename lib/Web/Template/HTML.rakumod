@@ -1,3 +1,4 @@
+use v6.d;
 use Web::Template;
 
 class Web::Template::HTML does Web::Template {
@@ -6,7 +7,7 @@ class Web::Template::HTML does Web::Template {
     has $!engine = HTML::Template;
     has @!paths  = './views';
 
-    method render ($template-name, *%named, *@positional) {
+    method render ($template-name, *%named, **@positional) {
     ## HTML::Template uses named parameters.
         my ($template, $foundInPath);
         for @!paths -> $path {
@@ -21,7 +22,7 @@ class Web::Template::HTML does Web::Template {
         $!engine.from_file($template).with_params(%named).output;
     }
 
-    method set-path (*@paths) {
+    method set-path (**@paths) {
         @!paths = @paths;
     }
 }

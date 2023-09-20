@@ -1,3 +1,4 @@
+use v6.d;
 use Web::Template;
 
 class Web::Template::Mojo does Web::Template {
@@ -6,7 +7,7 @@ class Web::Template::Mojo does Web::Template {
     has $!engine = Template::Mojo;
     has @!paths    = './views';
 
-    method render ($template-name, *%named, *@positional) {
+    method render ($template-name, *%named, **@positional) {
         my $template-file;
         my $template;
         for @!paths -> $path {
@@ -26,7 +27,7 @@ class Web::Template::Mojo does Web::Template {
         $!engine.new($template).render(%named.kv, |@positional);
     }
 
-    method set-path (*@paths) {
+    method set-path (**@paths) {
         @!paths = @paths;
     }
 }

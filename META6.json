@@ -11,13 +11,13 @@
   "description": "A template engine abstraction layer for web frameworks",
   "license": "NOASSERTION",
   "name": "Web::Template",
-  "perl": "6.*",
   "provides": {
     "Web::Template": "lib/Web/Template.rakumod",
     "Web::Template::HTML": "lib/Web/Template/HTML.rakumod",
     "Web::Template::Mojo": "lib/Web/Template/Mojo.rakumod",
     "Web::Template::Template6": "lib/Web/Template/Template6.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
   "source-url": "git://github.com/raku-community-modules/Web-Template.git",
@@ -25,5 +25,5 @@
   ],
   "test-depends": [
   ],
-  "version": "2.0"
+  "version": "3.0"
 }

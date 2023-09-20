@@ -1,3 +1,4 @@
+use v6.d;
 use Web::Template;
 
 class Web::Template::Template6 does Web::Template {
@@ -5,12 +6,12 @@ class Web::Template::Template6 does Web::Template {
 
     has $!engine = Template6.new;
 
-    method render ($template, *%named, *@positional) {
+    method render ($template, *%named, **@positional) {
         ## Template6 uses named parameters only.
         $!engine.process($template, |%named);
     }
 
-    method set-path (*@paths) {
+    method set-path (**@paths) {
         for @paths -> $path {
             $!engine.add-path($path);
         }

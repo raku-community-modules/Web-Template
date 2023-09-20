@@ -2,6 +2,12 @@ Revision history for Web::Template
 
 {{$NEXT}}
 
+3.0  2023-09-20T02:03:57+02:00
+    - Added HTML::Template back as it works now
+    - locked language version to v6.d
+    - the slurpy parameters of `render` and `set-path` are now without flattening
+    - some README update
+
 2.0  2023-01-18T01:06:43+01:00
     - Removed uninstallable HTML::Template module from the options
 

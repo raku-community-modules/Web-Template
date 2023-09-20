@@ -16,7 +16,7 @@ and [Web::App::MVC](https://github.com/raku-community-modules/Web-App-MVC/).
    An engine inspired by Template Toolkit. Has many features.
    Wrapper is Web::Template::Template6
 
- * [Template::Mojo](https://github.com/tadzik/Template-Mojo/)
+ * [Template::Mojo](https://github.com/raku-community-modules/Template-Mojo/)
 
    A template engine inspired by Perl's Mojo::Template.
    Wrapper is Web::Template::Mojo
@@ -57,8 +57,8 @@ but some like Mojo, use positional parameters. This handles both.
 ## Usage
 
 ```raku
-use Web::Template::TAL;
-my $engine = Web::Template::TAL.new;
+use Web::Template::Template6;
+my $engine = Web::Template::Template6.new;
 $engine.set-path('./views');
 $engine.render('example.xml', :name<Bob>);
 ```
@@ -81,7 +81,7 @@ COPYRIGHT AND LICENSE
 
 Copyright 2013 - 2019 Timothy Totten
 
-Copyright 2020 - 2022 Raku Community
+Copyright 2020 - 2023 Raku Community
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
